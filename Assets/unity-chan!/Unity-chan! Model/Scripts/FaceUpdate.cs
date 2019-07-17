@@ -15,6 +15,7 @@ namespace UnityChan
 			anim = GetComponent<Animator> ();
 		}
 
+/* 
 		void OnGUI ()
 		{
 			GUILayout.Box ("Face Update", GUILayout.Width (170), GUILayout.Height (25 * (animations.Length + 2)));
@@ -28,7 +29,7 @@ namespace UnityChan
 			isKeepFace = GUILayout.Toggle (isKeepFace, " Keep Face");
 			GUILayout.EndArea ();
 		}
-
+*/
 		float current = 0;
 
 		void Update ()
@@ -41,11 +42,11 @@ namespace UnityChan
 			}
 			anim.SetLayerWeight (1, current);
 		}
-	 
+
 
 		//アニメーションEvents側につける表情切り替え用イベントコール
 		public void OnCallChangeFace (string str)
-		{   
+		{
 			int ichecked = 0;
 			foreach (var animation in animations) {
 				if (str == animation.name) {
@@ -58,7 +59,7 @@ namespace UnityChan
 					str = "default@unitychan";
 					ChangeFace (str);
 				}
-			} 
+			}
 		}
 
 		void ChangeFace (string str)
