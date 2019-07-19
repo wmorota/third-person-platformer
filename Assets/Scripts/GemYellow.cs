@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GemGreen : MonoBehaviour
+public class GemYellow : MonoBehaviour
 {
     // Start is called before the first frame update
     //oid Start()
@@ -26,7 +26,7 @@ public class GemGreen : MonoBehaviour
 
     void OnTriggerEnter()
     {
-      GlobalScore.currentScore += 1000; 
+      GlobalScore.currentScore += 5000;
       collectSound.Play();
       Destroy(gameObject);                 // Makes gameObject dissapear (which is the Green Gem objects that we drag it to I assume)
 
