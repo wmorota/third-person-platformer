@@ -10,7 +10,7 @@ public class GlobalTimer : MonoBehaviour
   public GameObject timeDisplay01;
   public GameObject timeDisplay02;
   public bool decrementTime = false;
-  public int seconds = 151;
+  public int seconds = 101;
 
 
     // Start is called before the first frame update
