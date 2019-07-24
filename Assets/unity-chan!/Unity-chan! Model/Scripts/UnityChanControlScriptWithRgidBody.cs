@@ -28,7 +28,7 @@ namespace UnityChan
 		// 後退速度
 		public float backwardSpeed = 2.0f;
 		// 旋回速度
-		public float rotateSpeed = 2.0f;
+		public float rotateSpeed = 4.0f;
 		// ジャンプ威力
 		public float jumpPower = 3.0f;
 		// キャラクターコントローラ（カプセルコライダ）の参照
@@ -189,7 +189,7 @@ namespace UnityChan
 			GUI.Label (new Rect (Screen.width - 245, 110, 250, 30), "Left Control : Front Camera");
 			GUI.Label (new Rect (Screen.width - 245, 130, 250, 30), "Alt : LookAt Camera");
 		}
-*/ 
+*/
 
 		// キャラクターのコライダーサイズのリセット関数
 		void resetCollider ()
