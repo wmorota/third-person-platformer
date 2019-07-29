@@ -19,7 +19,7 @@ public class GlobalScore : MonoBehaviour
     void Update()
     {
         internalScore = currentScore;
-        scoreBox.GetComponent<Text>().text = "" + internalScore; 
+        scoreBox.GetComponent<Text>().text = "" + internalScore;
 
     }
 }

@@ -11,7 +11,7 @@ public class GlobalTimer : MonoBehaviour
   public GameObject timeDisplay02;
   public bool decrementTime = false;
   public int seconds = 101;
-
+  public static int extendScore;
 
     // Start is called before the first frame update
     //void Start()
@@ -22,6 +22,8 @@ public class GlobalTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      extendScore = seconds; 
+
       if(decrementTime  == false)
       {
         StartCoroutine(SubtractSecond());
