@@ -44,7 +44,7 @@ public class FinishLevel : MonoBehaviour
       theScore.SetActive(true);
       yield return new WaitForSeconds(0.5f);
       totalScore.SetActive(true);
-      yield return new WaitForSeconds(2);
-      fadeOut.SetActive(true); 
+      yield return new WaitForSeconds(3.5f);
+      fadeOut.SetActive(true);
     }
 }
