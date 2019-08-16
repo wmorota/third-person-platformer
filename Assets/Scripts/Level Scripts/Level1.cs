@@ -10,7 +10,8 @@ public class Level1 : MonoBehaviour
     void Start()
     {
       RedirectToLevel.redirectToLevel = 3;
-      StartCoroutine(FadeInOff()); 
+      RedirectToLevel.nextLevel = 4;  // level 2
+      StartCoroutine(FadeInOff());
     }
 
     IEnumerator FadeInOff()
